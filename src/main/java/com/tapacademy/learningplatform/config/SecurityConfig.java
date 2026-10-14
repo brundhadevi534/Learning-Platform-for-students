@@ -112,7 +112,8 @@ public class SecurityConfig {
         configuration.setAllowedOriginPatterns(java.util.List.of(
             "http://localhost:5500", "http://127.0.0.1:5500", 
             "http://localhost:3000", "http://localhost:8080",
-            "http://localhost:*", "http://127.0.0.1:*"
+            "http://localhost:*", "http://127.0.0.1:*",
+            "https://*.up.railway.app"
         ));
         configuration.setAllowedMethods(java.util.List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(java.util.List.of("Authorization", "Cache-Control", "Content-Type", "Accept"));
